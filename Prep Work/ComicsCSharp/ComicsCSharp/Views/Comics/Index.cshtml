@@ -1,0 +1,18 @@
+﻿@{
+}
+
+<h2>Comics Index</h2>
+
+<ul>
+    @foreach (var comic in ViewBag.comics)
+    {
+    <li>@comic</li>
+
+    }
+
+</ul>
+
+<form method="post" action="Comics/add">
+    <label>Comic: <input type="text" name="comic"/></label>
+    <button>Add</button>
+</form>
